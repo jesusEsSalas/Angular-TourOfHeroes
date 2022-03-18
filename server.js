@@ -4,10 +4,10 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/herokuubsmi'));
+app.use(express.static('./dist/Angular-TourOfHeroes'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/angular-heroku/'}),
+    res.sendFile('index.html', {root: 'dist/Angular-TourOfHeroes/'}),
 );
 
 app.listen(process.env.PORT || 8080)
