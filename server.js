@@ -4,10 +4,10 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/Angular-TourOfHeroes'));
+app.use(express.static('./dist/angular-tour-of-heroes'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/Angular-TourOfHeroes/'}),
+    res.sendFile('index.html', {root: 'dist/angular-tour-of-heroes/'}),
 );
 
 app.listen(process.env.PORT || 8080)
